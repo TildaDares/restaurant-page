@@ -48,7 +48,7 @@ nav ul li .btn {
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    height: 96vh;
+    height: 100vh;
 }
 
 .background {
@@ -64,6 +64,10 @@ nav ul li .btn {
     height: 96vh;
 }
 
+.main-image .brand {
+    position: fixed;
+}
+
 .main-image p,
 .slideshow-title,
 .menu-items {
@@ -76,6 +80,10 @@ nav ul li .btn {
 
 .purpose {
     font-size: 1.7rem;
+}
+
+.home {
+    position: relative;
 }
 
 .about-shadows {

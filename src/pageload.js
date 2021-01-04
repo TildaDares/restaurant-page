@@ -1,5 +1,6 @@
+import { homeFunc } from './home.js'
+
 function createNav() {
-    let contentDiv = document.querySelector('#content');
     let nav = document.createElement('nav');
     let ul = document.createElement('ul');
     let homeList = document.createElement('li');
@@ -10,14 +11,12 @@ function createNav() {
     let contactBtn = document.createElement('button');
     nav.className = "navbar navbar-expand-lg";
     ul.className = "d-flex justify-content-between justify-content-lg-around w-100 p-0 mb-0 text-white";
-    homeBtn.className = "btn";
-    homeBtn.id = "active";
-    menuBtn.className = "btn";
-    contactBtn.className = "btn";
+    homeBtn.className = "btn home-btn nav-btn";
+    menuBtn.className = "btn menu-btn nav-btn";
+    contactBtn.className = "btn contact-btn nav-btn";
     homeBtn.textContent = 'Home';
     menuBtn.textContent = 'Menu';
     contactBtn.textContent = 'Contact';
-    contentDiv.appendChild(nav);
     nav.appendChild(ul);
     ul.appendChild(homeList);
     ul.appendChild(menuList);
@@ -25,8 +24,6 @@ function createNav() {
     homeList.appendChild(homeBtn);
     menuList.appendChild(menuBtn);
     contactList.appendChild(contactBtn);
-    homeBtn.addEventListener('click', homeFunc);
-    menuBtn.addEventListener('click', menuFunc);
-    contactBtn.addEventListener('click', contactFunc);
+    return nav;
 }
-export { createNav }
+export default createNav
