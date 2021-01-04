@@ -98,6 +98,7 @@ function thirdDivFunc() {
         link.appendChild(iconElem);
         socialLinks.appendChild(link);
     }
+    thirdDiv.appendChild(photoCredit());
     return thirdDiv;
 }
 
@@ -109,7 +110,7 @@ function init() {
     background.appendChild(thirdDivFunc());
 }
 
-function activeFromOtherBtns(element) {
+function removeActiveFromOtherBtns(element) {
     let navBtns = document.querySelectorAll('.nav-btn')
     for (let i = 0; i < navBtns.length; i++) {
         if (navBtns[i] !== element) {
@@ -118,9 +119,25 @@ function activeFromOtherBtns(element) {
     };
 }
 
+function photoCredit() {
+    let par = document.createElement('p');
+    let unsplashLink = document.createElement('a');
+    let freepikLink = document.createElement('a');
+    unsplashLink.href = "https://unsplash.com/";
+    unsplashLink.textContent = "Unsplash & ";
+    unsplashLink.className = "text-white";
+    freepikLink.href = "https://www.freepik.com/";
+    freepikLink.textContent = "Freepik";
+    freepikLink.className = "text-white";
+    par.textContent = "Photo credits: ";
+    par.appendChild(unsplashLink);
+    par.appendChild(freepikLink);
+    return par;
+}
+
 function homeFunc(e) {
     document.querySelector('.home-btn').id = "active";
-    activeFromOtherBtns(e.target);
+    removeActiveFromOtherBtns(e.target);
     init();
 }
-export { homeFunc, activeFromOtherBtns }
+export { homeFunc, removeActiveFromOtherBtns, photoCredit }

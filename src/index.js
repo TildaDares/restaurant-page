@@ -1,5 +1,6 @@
 import createNav from './pageload.js'
 import { homeFunc } from './home.js'
+import menuFunc from './menu.js'
 
 function tabEvents() {
     document.querySelector('.home-btn').addEventListener('click', homeFunc);
