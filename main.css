@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo&family=Playfair+Display:ital,wght@1,500&display=swap');
+body {
+    font-family: 'Chivo', sans-serif;
+}
+
+nav {
+    background-color: black;
+    position: sticky !important;
+    top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li .btn {
+    color: white;
+    font-size: 1.3rem;
+}
+
+#active {
+    color: #ebc191;
+}
+
+.slideshow-1 {
+    background-image: url(../images/side-view-spaghetti-with-greens-ricotta-cheese-round-white-plate.jpg);
+}
+
+.slideshow-2 {
+    background-image: url(../images/jose-cullell-ZTyl6zDPrWw-unsplash.jpg);
+}
+
+.slideshow-3 {
+    background-image: url(../images/louis-hansel-shotsoflouis-LIJujhJviMI-unsplash.jpg);
+}
+
+.slideshow-4 {
+    background-image: url(../images/serving-wedding-table-vintage-style.jpg);
+}
+
+.slideshow-5 {
+    background-image: url(../images/tables-chairs-arranged-empty-coffee-shop.jpg);
+}
+
+.slideshow,
+.contact {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 96vh;
+}
+
+.background {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.main-image {
+    background-image: url(../images/high-angle-asian-dumplings-dish-with-herbs.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 96vh;
+}
+
+.main-image p,
+.slideshow-title,
+.menu-items {
+    font-family: 'Playfair Display', serif;
+}
+
+.restaurant-name {
+    font-size: 5.8rem;
+}
+
+.purpose {
+    font-size: 1.7rem;
+}
+
+.about-shadows {
+    margin-bottom: 60px;
+}
+
+.about-shadows img {
+    height: 240px;
+    width: 100%;
+}
+
+.menu {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+.dinner {
+    background-image: url(../images/lentil-soup-served-with-lemon-sumac-black-pepper-balls-dried-mint.jpg);
+}
+
+.wine {
+    background-image: url(../images/glass-red-wine-bottle-bar-counter.jpg);
+}
+
+.beverages {
+    background-image: url(../images/96b9309c14cd1bb55b4d9a8ea4dcf484.jpg);
+}
+
+.seafood {
+    background-image: url(../images/raw-giant-shrimps-dark-table.jpg);
+}
+
+.foreign {
+    background-image: url(../images/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+}
+
+.menu-items {
+    font-size: 4rem;
+}
+
+.contact {
+    background-image: url(../images/bundo-kim-Pb9bUzH1nD8-unsplash.jpg);
+    height: 94.3vh;
+}
+
+.contact .contact-bg {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.contact-details {
+    font-size: 1.1rem;
+}
+
+.social-links a i {
+    font-size: 1.5rem;
+}
+
+.social-links a i:hover {
+    color: #ebc191;
+}
+
+footer {
+    background-color: black;
+}
+
+@media(min-width: 637px) {
+    .restaurant-name {
+        font-size: 6.5rem;
+    }
+    .slideshow p {
+        font-size: 1.2rem;
+    }
+}
+
+@media(min-width: 688px) {
+    .restaurant-name {
+        font-size: 8rem;
+    }
+    .purpose {
+        font-size: 2rem;
+    }
+}
+
+@media(min-width: 800px) {
+    .contact-details {
+        font-size: 1.3rem;
+    }
+    .social-links a i {
+        font-size: 1.5rem;
+    }
+}
+
+@media(min-width: 1099px) {
+    .slideshow p {
+        padding-left: 200px !important;
+        padding-right: 200px !important;
+        font-size: 1.3rem;
+    }
+    .menu {
+        height: 400px;
+    }
+}
