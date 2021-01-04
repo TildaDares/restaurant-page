@@ -1,1 +1,2 @@
-alert("Hi Kome")
+import { createNav } from './pageload.js'
+createNav();
