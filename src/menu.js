@@ -12,7 +12,8 @@ function createMenuSlideshow() {
         if (i === 4) {
             div.className = "menu foreign";
         } else {
-            div.className = `menu ${menuArr[i]}.toLowerCase`;
+            let menuClass = menuArr[i].toLowerCase();
+            div.className = `menu ${menuClass}`;
         }
         div.appendChild(link)
         section.appendChild(div);
@@ -26,7 +27,7 @@ function createFooter() {
     let icons = ["fab fa-twitter mr-2", "fab fa-facebook-f mr-2", "fab fa-instagram mr-2", "fab fa-linkedin-in"]
     let socialLinks = document.createElement('div');
     socialLinks.className = "text-center mb-2";
-    thirdDiv.className = "d-flex justify-content-center align-items-center flex-column p-3";
+    footer.className = "d-flex justify-content-center align-items-center flex-column p-4 text-white";
     for (let i = 0; i < address.length; i++) {
         let par = document.createElement('p');
         par.textContent = address[i];
@@ -49,8 +50,9 @@ function createFooter() {
 function menuFunc(e) {
     document.querySelector('.menu-btn').id = "active";
     removeActiveFromOtherBtns(e.target);
-    let content = document.queryElement('#content');
-    content.appendChild(createMenuSlideshow());
-    content.appendChild(createFooter());
+    let tab = document.querySelector('.tab-content');
+    tab.innerHTML = "";
+    tab.appendChild(createMenuSlideshow());
+    tab.appendChild(createFooter());
 }
 export default menuFunc

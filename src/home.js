@@ -1,5 +1,13 @@
 function createMainImageDiv() {
     let contentDiv = document.querySelector('#content');
+    let tabDiv = document.querySelector('.tab-content')
+    if (tabDiv !== null) {
+        tabDiv.innerHTML = "";
+    } else {
+        tabDiv = document.createElement('div');
+        tabDiv.className = "tab-content";
+    }
+    contentDiv.appendChild(tabDiv);
     let parOne = document.createElement('p');
     let parTwo = document.createElement('p');
     let mainImageDiv = document.createElement('div');
@@ -10,18 +18,18 @@ function createMainImageDiv() {
     parOne.textContent = "Shadows";
     parTwo.className = "text-white text-center purpose mt-0";
     parTwo.textContent = "Bar & Restaurant";
-    contentDiv.appendChild(mainImageDiv);
+    tabDiv.appendChild(mainImageDiv);
     brandDiv.appendChild(parOne);
     brandDiv.appendChild(parTwo);
     mainImageDiv.appendChild(brandDiv);
-    return contentDiv;
+    return tabDiv;
 }
 
 function createHomeSlideshow() {
-    let contentDiv = createMainImageDiv();
+    let tabDiv = createMainImageDiv();
     let section = document.createElement('section');
     section.className = "home";
-    contentDiv.appendChild(section);
+    tabDiv.appendChild(section);
     let slideshowHeader = ['Our Menu', 'Our Wine Collection', 'Catering Services', 'About Shadows'];
     for (let i = 1; i < 5; i++) {
         let slideshow = document.createElement('div');
@@ -140,4 +148,5 @@ function homeFunc(e) {
     removeActiveFromOtherBtns(e.target);
     init();
 }
+
 export { homeFunc, removeActiveFromOtherBtns, photoCredit }

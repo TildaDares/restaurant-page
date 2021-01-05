@@ -23,23 +23,23 @@ nav ul li .btn {
 }
 
 .slideshow-1 {
-    background-image: url(../images/side-view-spaghetti-with-greens-ricotta-cheese-round-white-plate.jpg);
+    background-image: url(images/side-view-spaghetti-with-greens-ricotta-cheese-round-white-plate.jpg);
 }
 
 .slideshow-2 {
-    background-image: url(../images/jose-cullell-ZTyl6zDPrWw-unsplash.jpg);
+    background-image: url(images/jose-cullell-ZTyl6zDPrWw-unsplash.jpg);
 }
 
 .slideshow-3 {
-    background-image: url(../images/louis-hansel-shotsoflouis-LIJujhJviMI-unsplash.jpg);
+    background-image: url(images/louis-hansel-shotsoflouis-LIJujhJviMI-unsplash.jpg);
 }
 
 .slideshow-4 {
-    background-image: url(../images/serving-wedding-table-vintage-style.jpg);
+    background-image: url(images/serving-wedding-table-vintage-style.jpg);
 }
 
 .slideshow-5 {
-    background-image: url(../images/tables-chairs-arranged-empty-coffee-shop.jpg);
+    background-image: url(images/tables-chairs-arranged-empty-coffee-shop.jpg);
 }
 
 .slideshow,
@@ -56,7 +56,7 @@ nav ul li .btn {
 }
 
 .main-image {
-    background-image: url(../images/high-angle-asian-dumplings-dish-with-herbs.jpg);
+    background-image: url(images/high-angle-asian-dumplings-dish-with-herbs.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -102,23 +102,23 @@ nav ul li .btn {
 }
 
 .dinner {
-    background-image: url(../images/lentil-soup-served-with-lemon-sumac-black-pepper-balls-dried-mint.jpg);
+    background-image: url(images/lentil-soup-served-with-lemon-sumac-black-pepper-balls-dried-mint.jpg);
 }
 
 .wine {
-    background-image: url(../images/glass-red-wine-bottle-bar-counter.jpg);
+    background-image: url(images/glass-red-wine-bottle-bar-counter.jpg);
 }
 
 .beverages {
-    background-image: url(../images/96b9309c14cd1bb55b4d9a8ea4dcf484.jpg);
+    background-image: url(images/96b9309c14cd1bb55b4d9a8ea4dcf484.jpg);
 }
 
 .seafood {
-    background-image: url(../images/raw-giant-shrimps-dark-table.jpg);
+    background-image: url(images/raw-giant-shrimps-dark-table.jpg);
 }
 
 .foreign {
-    background-image: url(../images/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    background-image: url(images/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
 }
 
 .menu-items {
@@ -126,7 +126,7 @@ nav ul li .btn {
 }
 
 .contact {
-    background-image: url(../images/bundo-kim-Pb9bUzH1nD8-unsplash.jpg);
+    background-image: url(images/bundo-kim-Pb9bUzH1nD8-unsplash.jpg);
     height: 94.3vh;
 }
 
